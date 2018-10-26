@@ -26,9 +26,9 @@ namespace BD_Shop_VS
             labelDocNum.Text += BD.DocNum.ToString();
             dataGridViewTov.DataSource = BD.GetTablePolya("Sp_Mat", "id_mat", "name_mat", "kl_opt");
             dataGridView1.DataSource = Doc_Tovar.GetTovar(BD.DocNum);
+    
             button2.Enabled = false;
-
-
+            
         }
 
         private void dataGridViewTov_Click(object sender, EventArgs e)

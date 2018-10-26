@@ -49,7 +49,7 @@ namespace BD_Shop_VS
         private void button_Prihod_Click(object sender, EventArgs e)
         {
             Doc_TovarForm dtf = new Doc_TovarForm();
-            BD.IdOp = 3;
+            BD.IdOp = 2;
             dtf.Show();
         }
         

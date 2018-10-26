@@ -10,7 +10,7 @@ namespace BD_Shop_VS
 {
     class BD
     {
-        static string connecting = @"Data Source=USER-ПК\SQLEXPRESS;Initial Catalog=Shop_VS;Integrated Security=True";
+        static string connecting = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\BD_Shop_VS\Shop_VS.mdf;Integrated Security=True;Connect Timeout=30";
 
         static SqlConnection con;
 
@@ -145,6 +145,7 @@ namespace BD_Shop_VS
                 };
                 comm.Parameters.Add(id_tov);
                 var result = comm.ExecuteNonQuery();
+                
                 con.Close();
             }
         }
@@ -175,7 +176,7 @@ namespace BD_Shop_VS
 
                 SqlParameter id_op = new SqlParameter
                 {
-                    ParameterName = "@op",
+                    ParameterName = "@id_op",
                     Value = IdOp
                 };
                 comm.Parameters.Add(id_op);

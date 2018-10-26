@@ -25,7 +25,7 @@ namespace BD_Shop_VS
         {
            
                 BD.InsertMat(textBox1.Text, textBox_Kol.Text);
-                BD.ChangeKlMat(Int32.Parse(textBox_Kol.Text, BD.IdOp));
+                BD.ChangeKlMat(Int32.Parse(textBox_Kol.Text));
                 this.Close();
            
         }

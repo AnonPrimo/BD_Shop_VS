@@ -58,6 +58,7 @@
             this.dataGridViewDoc.Location = new System.Drawing.Point(13, 71);
             this.dataGridViewDoc.MultiSelect = false;
             this.dataGridViewDoc.Name = "dataGridViewDoc";
+            this.dataGridViewDoc.RowHeadersWidth = 30;
             this.dataGridViewDoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewDoc.Size = new System.Drawing.Size(357, 434);
             this.dataGridViewDoc.TabIndex = 0;

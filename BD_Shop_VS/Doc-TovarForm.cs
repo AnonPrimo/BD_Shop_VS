@@ -24,6 +24,7 @@ namespace BD_Shop_VS   ///приход
         {
             textBoxDataFrom.Text = "01.01.2018";
             textBoxDataTo.Text = "01.10.2018";
+            button2.Enabled = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,6 +34,7 @@ namespace BD_Shop_VS   ///приход
             textBoxSumm.Text = getSumm();
             textBoxOplata.Text = getOpl();
             textBoxDolg.Text = getDolg();
+
         }
 
         private void dataGridViewDoc_Click(object sender, EventArgs e)
@@ -40,7 +42,7 @@ namespace BD_Shop_VS   ///приход
             int id_doc = (int)dataGridViewDoc.SelectedRows[0].Cells["id_doc"].Value;
             dataGridViewTovar.DataSource = Doc_Tovar.GetTovar(id_doc);
             BD.DocNum = id_doc;
-                       
+            button2.Enabled = true;
         }
 
         string getSumm()
@@ -83,5 +85,6 @@ namespace BD_Shop_VS   ///приход
             EditDocForm edf = new EditDocForm();
             edf.Show();
         }
+        
     }
 }
